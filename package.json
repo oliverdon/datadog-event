@@ -1,0 +1,15 @@
+{
+  "name": "datadog-event",
+  "version": "1.0.0",
+  "description": "Sends events to DataDog - https://docs.datadoghq.com/api/latest/events/#post-an-event",
+  "main": "dist/index.js",
+  "scripts": {"build": "ncc build src/index.js --license licenses.txt"},
+  "keywords": [],
+  "author": "Oliver Don <datadog-event@oliverdon.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "@actions/http-client": "^1.0.9"
+  }
+}

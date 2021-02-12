@@ -1,0 +1,22 @@
+name: 'DataDog Event'
+description: 'Sends an event to DataDog'
+inputs:
+  apikey:
+    description: 'API Key'
+    required: true
+  datacenter:
+    description: 'Datacenter to use EU|US'
+    required: false
+    default: 'US'
+  title:
+    description: 'Title'
+    required: true
+  text:
+    description: 'Text'
+    required: true
+  tags:
+    description: 'Json array of tags'
+    required: false
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
